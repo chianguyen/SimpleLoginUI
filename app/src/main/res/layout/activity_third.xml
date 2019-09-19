@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_gradient"
+    tools:context=".ThirdActivity">
+
+
+    <Button
+        android:id="@+id/btn_new_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="REGISTER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_pass_confirm" />
+
+    <EditText
+        android:id="@+id/text_reg_name"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="206dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="@+id/text_reg_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_reg_name" />
+
+    <EditText
+        android:id="@+id/text_pass_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="@+id/text_pass"
+        app:layout_constraintTop_toBottomOf="@+id/text_pass" />
+
+    <TextView
+        android:id="@+id/text_welcome_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="73dp"
+        android:text="REGISTRATION"
+        android:textColor="#ffffff"
+        android:fontFamily="monospace"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
